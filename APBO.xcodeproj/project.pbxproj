@@ -16,6 +16,14 @@
 		74C3CF66253AB80300757586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF65253AB80300757586 /* Assets.xcassets */; };
 		74C3CF69253AB80300757586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF67253AB80300757586 /* LaunchScreen.storyboard */; };
 		74C3CF71253DE7D700757586 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF70253DE7D700757586 /* Launch Screen.storyboard */; };
+		74C3CF73253DEA6B00757586 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF72253DEA6B00757586 /* Explosion.sks */; };
+		74C3CF75253DEA7600757586 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3CF74253DEA7600757586 /* EnemyNode.swift */; };
+		74C3CF77253DEAB800757586 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF76253DEAB800757586 /* Starfield.sks */; };
+		74C3CF79253DEADA00757586 /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF78253DEADA00757586 /* enemy-types.json */; };
+		74C3CF7B253DEADF00757586 /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 74C3CF7A253DEADF00757586 /* waves.json */; };
+		74C3CF7D253DEAEE00757586 /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3CF7C253DEAEE00757586 /* EnemyType.swift */; };
+		74C3CF7F253DEAF300757586 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3CF7E253DEAF300757586 /* Wave.swift */; };
+		74C3CF81253DEAFB00757586 /* Bundle-Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C3CF80253DEAFB00757586 /* Bundle-Decoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		74C3CF68253AB80300757586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C3CF6A253AB80300757586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C3CF70253DE7D700757586 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		74C3CF72253DEA6B00757586 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		74C3CF74253DEA7600757586 /* EnemyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		74C3CF76253DEAB800757586 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		74C3CF78253DEADA00757586 /* enemy-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
+		74C3CF7A253DEADF00757586 /* waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
+		74C3CF7C253DEAEE00757586 /* EnemyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		74C3CF7E253DEAF300757586 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		74C3CF80253DEAFB00757586 /* Bundle-Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +81,19 @@
 				74C3CF58253AB80000757586 /* AppDelegate.swift */,
 				74C3CF5A253AB80000757586 /* GameScene.sks */,
 				74C3CF5C253AB80000757586 /* Actions.sks */,
+				74C3CF74253DEA7600757586 /* EnemyNode.swift */,
+				74C3CF72253DEA6B00757586 /* Explosion.sks */,
+				74C3CF7C253DEAEE00757586 /* EnemyType.swift */,
 				74C3CF5E253AB80000757586 /* GameScene.swift */,
+				74C3CF7E253DEAF300757586 /* Wave.swift */,
+				74C3CF80253DEAFB00757586 /* Bundle-Decoding.swift */,
 				74C3CF60253AB80000757586 /* GameViewController.swift */,
 				74C3CF70253DE7D700757586 /* Launch Screen.storyboard */,
+				74C3CF76253DEAB800757586 /* Starfield.sks */,
 				74C3CF62253AB80000757586 /* Main.storyboard */,
 				74C3CF65253AB80300757586 /* Assets.xcassets */,
+				74C3CF7A253DEADF00757586 /* waves.json */,
+				74C3CF78253DEADA00757586 /* enemy-types.json */,
 				74C3CF67253AB80300757586 /* LaunchScreen.storyboard */,
 				74C3CF6A253AB80300757586 /* Info.plist */,
 			);
@@ -136,9 +160,13 @@
 			files = (
 				74C3CF71253DE7D700757586 /* Launch Screen.storyboard in Resources */,
 				74C3CF64253AB80000757586 /* Main.storyboard in Resources */,
+				74C3CF77253DEAB800757586 /* Starfield.sks in Resources */,
+				74C3CF79253DEADA00757586 /* enemy-types.json in Resources */,
 				74C3CF5B253AB80000757586 /* GameScene.sks in Resources */,
 				74C3CF66253AB80300757586 /* Assets.xcassets in Resources */,
 				74C3CF69253AB80300757586 /* LaunchScreen.storyboard in Resources */,
+				74C3CF73253DEA6B00757586 /* Explosion.sks in Resources */,
+				74C3CF7B253DEADF00757586 /* waves.json in Resources */,
 				74C3CF5D253AB80000757586 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C3CF7F253DEAF300757586 /* Wave.swift in Sources */,
 				74C3CF5F253AB80000757586 /* GameScene.swift in Sources */,
+				74C3CF7D253DEAEE00757586 /* EnemyType.swift in Sources */,
 				74C3CF61253AB80000757586 /* GameViewController.swift in Sources */,
+				74C3CF81253DEAFB00757586 /* Bundle-Decoding.swift in Sources */,
+				74C3CF75253DEA7600757586 /* EnemyNode.swift in Sources */,
 				74C3CF59253AB80000757586 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
