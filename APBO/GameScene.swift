@@ -18,7 +18,7 @@ enum CollisionType: UInt32 {
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     let motionManager = CMMotionManager()
-    let player = SKSpriteNode(imageNamed: "apboship")
+    let player = SKSpriteNode(imageNamed: "player")
     
     let waves = Bundle.main.decode([Wave].self, from: "waves.json")
     let enemyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types.json")
@@ -60,7 +60,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.position.x = frame.minX+75
         player.zPosition = 1
         addChild(player)
-        player.setScale(0.2)
+
 
         
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.texture!.size())
