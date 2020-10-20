@@ -60,6 +60,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.position.x = frame.minX+75
         player.zPosition = 1
         addChild(player)
+        player.setScale(0.2)
+
         
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.texture!.size())
         player.physicsBody?.categoryBitMask = CollisionType.player.rawValue
